@@ -1,7 +1,7 @@
 # Requirements: Municipal Ward Election Map
 
 ## Goal
-Build a single-page site that shows a city ward map and colors each ward by the winning party. The site defaults to Mumbai and supports switching city and language (English/Marathi). The layout should match `old/index.html`.
+Build a single-page site that shows a city ward map and colors each ward by the winning party. The site defaults to Mumbai and supports switching city and language (English/Marathi).
 
 ## Data Sources
 - GeoJSON (as JS globals):
@@ -61,7 +61,7 @@ Rules:
   - Tie-breaking: if counts are tied, use the party of sub-ward "A".
   - Legend counts = number of sub-ward seats won per party (not ward count).
 
-## UI Layout (match `old/index.html`)
+## UI Layout
 - Header/hero area with:
   - Eyebrow label (localized).
   - H1 title (city-specific, includes "Election Results").
@@ -137,7 +137,7 @@ Rules:
 
 ## Implementation Stages
 - Stage 1: UI shell
-  - Create `index.html` using the layout from `old/index.html`, with header, map card, panel, footer, and brand logos.
+  - Create `index.html` with header, map card, panel, footer, and brand logos.
   - Add city and language dropdowns.
   - Apply Orgpedia typography and base colors via theme config.
 - Stage 2: Data + map

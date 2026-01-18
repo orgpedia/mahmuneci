@@ -4,7 +4,9 @@
     "subtitle": "Each ward is colored by the winning party.",
     "controls": {
       "city": "City",
-      "language": "Language"
+      "language": "Language",
+      "pieCharts": "Show pie charts",
+      "mapLabels": "Show map labels"
     },
     "stats": {
       "wards": "wards mapped",
@@ -32,7 +34,9 @@
     "subtitle": "प्रत्येक प्रभाग जिंकणाऱ्या पक्षानुसार रंगवला आहे.",
     "controls": {
       "city": "शहर",
-      "language": "भाषा"
+      "language": "भाषा",
+      "pieCharts": "पाई चार्ट दाखवा",
+      "mapLabels": "नकाशा लेबल दाखवा"
     },
     "stats": {
       "wards": "प्रभाग",

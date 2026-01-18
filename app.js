@@ -61,6 +61,12 @@ const elements = {
   wardDetails: document.getElementById("ward-details"),
   hoverLabel: document.getElementById("hover-label"),
   dataSources: document.getElementById("data-sources"),
+  pieToggle: document.getElementById("pie-toggle"),
+  pieToggleLabel: document.getElementById("pie-toggle-label"),
+  mapLabelsToggle: document.getElementById("map-labels-toggle"),
+  mapLabelsToggleLabel: document.getElementById("map-labels-toggle-label"),
+  mapTitle: document.getElementById("map-title"),
+  mapLegend: document.getElementById("map-legend"),
 };
 
 let map;
@@ -76,6 +82,9 @@ let wardDataByNo = new Map();
 let legendCounts = new Map();
 let partyDisplayMap = new Map();
 let selectedWardNo = null;
+let showPieCharts = true;
+let showMapLabels = false;
+let currentGeoJson = null;
 
 function normalize(value) {
   if (value === null || value === undefined) {
@@ -359,11 +368,26 @@ function getWardNoLabel(entry, wardNo) {
   return wardNo;
 }
 
+function getHoverText(entry, wardNo) {
+  if (!wardNo) {
+    return "";
+  }
+  const displayWard = getWardNoLabel(entry, wardNo);
+  const wardName =
+    (currentLang === "mr" ? entry?.wardNameMr : entry?.wardName) ||
+    entry?.wardName ||
+    entry?.wardNameMr ||
+    "";
+  return wardName ? `${t("wardLabel")} ${displayWard} - ${wardName}` : `${t("wardLabel")} ${displayWard}`;
+}
+
 function updateUiStrings() {
   elements.eyebrow.textContent = t("eyebrow");
   elements.pageSubtitle.textContent = t("subtitle");
   elements.cityLabel.textContent = t("controls.city");
   elements.languageLabel.textContent = t("controls.language");
+  elements.pieToggleLabel.textContent = t("controls.pieCharts");
+  elements.mapLabelsToggleLabel.textContent = t("controls.mapLabels");
   elements.wardsLabel.textContent = t("stats.wards");
   elements.partiesLabel.textContent = t("stats.parties");
   elements.legendTitle.textContent = t("legendTitle");
@@ -372,7 +396,11 @@ function updateUiStrings() {
   document.documentElement.lang = currentLang;
 
   const config = CITY_CONFIG[currentCity];
-  elements.pageTitle.textContent = config.title[currentLang] || config.title.en;
+  const title = config.title[currentLang] || config.title.en;
+  elements.pageTitle.textContent = title;
+  if (elements.mapTitle) {
+    elements.mapTitle.textContent = title;
+  }
   elements.dataSources.textContent = formatTemplate(t("dataSources"), {
     map: config.mapFile,
     csv: config.csvFile,
@@ -403,10 +431,11 @@ function populateControls() {
   elements.languageSelect.value = currentLang;
 }
 
-function renderLegend() {
-  elements.legend.innerHTML = "";
-  const entries = Array.from(legendCounts.entries()).sort((a, b) => b[1] - a[1]);
-
+function renderLegendList(container, entries) {
+  if (!container) {
+    return;
+  }
+  container.innerHTML = "";
   entries.forEach(([party, count]) => {
     const item = document.createElement("li");
     item.className = "legend-item";
@@ -415,8 +444,14 @@ function renderLegend() {
       <span>${getPartyLabel(party)}</span>
       <span class="legend-count">${count}</span>
     `;
-    elements.legend.appendChild(item);
+    container.appendChild(item);
   });
+}
+
+function renderLegend() {
+  const entries = Array.from(legendCounts.entries()).sort((a, b) => b[1] - a[1]);
+  renderLegendList(elements.legend, entries);
+  renderLegendList(elements.mapLegend, entries);
 }
 
 function updateHover(entry, wardNo) {
@@ -425,11 +460,7 @@ function updateHover(entry, wardNo) {
     return;
   }
 
-  const displayWard = getWardNoLabel(entry, wardNo);
-  const party = entry?.majorityParty || FALLBACK_PARTY_KEY;
-  elements.hoverLabel.textContent = `${t("wardLabel")} ${displayWard} - ${getPartyLabel(
-    party,
-  )}`;
+  elements.hoverLabel.textContent = getHoverText(entry, wardNo) || t("hoverPrompt");
 }
 
 function updateDetails(wardNo) {
@@ -631,10 +662,27 @@ function buildMap(geojson, config) {
           const wardNo = normalize(feature?.properties?.ward_no);
           const entry = wardDataByNo.get(wardNo);
           updateHover(entry, wardNo);
+          const label = getHoverText(entry, wardNo);
+          if (label) {
+            if (layer.getTooltip()) {
+              layer.setTooltipContent(label);
+            } else {
+              layer.bindTooltip(label, {
+                sticky: true,
+                direction: "top",
+                opacity: 0.95,
+                className: "ward-tooltip",
+              });
+            }
+            layer.openTooltip();
+          }
         },
         mouseout: (event) => {
           wardLayer.resetStyle(event.target);
           elements.hoverLabel.textContent = t("hoverPrompt");
+          if (layer.getTooltip()) {
+            layer.closeTooltip();
+          }
         },
         click: () => {
           const wardNo = normalize(feature?.properties?.ward_no);
@@ -647,7 +695,7 @@ function buildMap(geojson, config) {
   map.fitBounds(wardLayer.getBounds(), { padding: [24, 24] });
   elements.totalWards.textContent = geojson.features.length;
 
-  if (config.hasSubWards) {
+  if (config.hasSubWards && showPieCharts) {
     renderPieCharts(geojson);
   } else if (pieLayer) {
     pieLayer.remove();
@@ -671,6 +719,7 @@ async function loadCityData(cityKey) {
     wardDataByNo = byWard;
     legendCounts = counts;
     partyDisplayMap = partyNames;
+    currentGeoJson = geojson;
 
     elements.partyCount.textContent = legendCounts.size;
     renderLegend();
@@ -711,9 +760,31 @@ async function init() {
 
   populateControls();
   updateUiStrings();
+  showMapLabels = elements.mapLabelsToggle?.checked ?? false;
+  document.body.classList.toggle("labels-on-map", showMapLabels);
   initMap();
+  showPieCharts = elements.pieToggle?.checked ?? true;
   await loadCityData(currentCity);
   renderPlaceholder();
+
+  elements.mapLabelsToggle.addEventListener("change", (event) => {
+    showMapLabels = event.target.checked;
+    document.body.classList.toggle("labels-on-map", showMapLabels);
+  });
+
+  elements.pieToggle.addEventListener("change", (event) => {
+    showPieCharts = event.target.checked;
+    if (!showPieCharts) {
+      if (pieLayer) {
+        pieLayer.remove();
+      }
+      return;
+    }
+    const config = CITY_CONFIG[currentCity];
+    if (config?.hasSubWards && currentGeoJson) {
+      renderPieCharts(currentGeoJson);
+    }
+  });
 
   elements.citySelect.addEventListener("change", async (event) => {
     currentCity = event.target.value;
