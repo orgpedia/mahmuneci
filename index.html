@@ -15,10 +15,14 @@
   </head>
   <body>
     <div class="page">
-      <header class="hero">
-        <div class="hero-text">
+      <div class="header-bar">
+        <div class="header-bar-content">
           <img class="brand-logo" src="orgpedia_label.png" alt="Orgpedia" />
           <p class="eyebrow" id="eyebrow">Municipal Election Results</p>
+        </div>
+      </div>
+      <header class="hero">
+        <div class="hero-text">
           <h1 id="page-title">Brihanmumbai Municipal Corporation Election Results</h1>
           <p class="sub" id="page-subtitle">Each ward is colored by the winning party.</p>
           <div class="controls">
@@ -84,9 +88,19 @@
 
       <footer class="footer">
         <img class="footer-logo" src="orgpedia_label_footer.png" alt="Orgpedia" />
-        <p id="data-sources">
-          Data sources: `mumbai.js.txt` (GeoJSON) and `mumbai.csv` (ward results).
-        </p>
+        <div class="footer-text">
+          <p id="data-sources">`mumbai.js.txt` (GeoJSON) and `mumbai.csv` (ward results).</p>
+          <p class="footer-note">
+            This is not official data. Please refer to Election Commission data for the latest and
+            greatest data.
+          </p>
+          <p class="footer-note">
+            The data is available at
+            <a href="https://github.com/orgpedia/mahmuneci" target="_blank" rel="noreferrer">
+              https://github.com/orgpedia/mahmuneci
+            </a>
+          </p>
+        </div>
       </footer>
     </div>
 

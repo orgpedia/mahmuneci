@@ -63,17 +63,20 @@ Rules:
 
 ## UI Layout
 - Header/hero area with:
-  - Eyebrow label (localized).
+  - Black header bar with Orgpedia logo and eyebrow label (localized).
+  - Thin blue ribbon at the bottom of the black header bar.
   - H1 title (city-specific, includes "Election Results").
   - Subhead (localized).
   - Stat blocks (localized labels).
 - Controls:
   - City dropdown (Mumbai, Pune, PCMC).
   - Language dropdown (English, Marathi).
+  - Map toggles (pie charts on/off, map labels on/off).
 - Main layout:
   - Map card on left (Leaflet).
   - Right panel with legend and ward details.
 - Footer with data sources (localized string).
+  - Add disclaimers and a GitHub link in the footer.
 
 ## Branding and Visual Style
 - Follow the color scheme and visual language of https://www.orgpedia.in/, using the palette and typography from `/Users/mukund/orgpedia/site.cabsec/docs/c/output.css`.
@@ -99,7 +102,7 @@ Rules:
   - Load the correct GeoJSON and CSV.
   - Update title, legend, stats, ward details, pie charts, and map bounds.
 - Hover:
-  - Show ward number + party in a hover label.
+  - Show ward number + ward name in a hover label on the map.
 - Click:
   - Pin ward details in the side panel.
 
@@ -134,10 +137,11 @@ Rules:
 - Ward details show sub-ward breakdown for Pune/PCMC and a single row for Mumbai.
 - Pie charts render for Pune/PCMC wards and reflect sub-ward seat distribution.
 - Header and footer display Orgpedia branding assets, and the overall color palette matches orgpedia.in.
+ - Footer includes disclaimers and a GitHub link; the data source line is hidden from view.
 
 ## Implementation Stages
 - Stage 1: UI shell
-  - Create `index.html` with header, map card, panel, footer, and brand logos.
+  - Create `index.html` with header bar, map card, panel, footer, and brand logos.
   - Add city and language dropdowns.
   - Apply Orgpedia typography and base colors via theme config.
 - Stage 2: Data + map

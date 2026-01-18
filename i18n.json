@@ -25,7 +25,7 @@
     "winnerLabel": "Winner",
     "partyLabel": "Party",
     "seatsLabel": "seats",
-    "dataSources": "Data sources: {map} (GeoJSON) and {csv} (ward results).",
+    "dataSources": "{map} (GeoJSON) and {csv} (ward results).",
     "mapLoadError": "GeoJSON not loaded.",
     "csvLoadError": "Failed to load CSV data."
   },
@@ -55,7 +55,7 @@
     "winnerLabel": "विजयी",
     "partyLabel": "पक्ष",
     "seatsLabel": "जागा",
-    "dataSources": "डेटा स्रोत: {map} (GeoJSON) आणि {csv} (प्रभाग निकाल).",
+    "dataSources": "{map} (GeoJSON) आणि {csv} (प्रभाग निकाल).",
     "mapLoadError": "GeoJSON लोड झालेले नाही.",
     "csvLoadError": "CSV डेटा लोड करण्यात अयशस्वी."
   }
