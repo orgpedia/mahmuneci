@@ -1,0 +1,58 @@
+{
+  "en": {
+    "eyebrow": "Municipal Election Results",
+    "subtitle": "Each ward is colored by the winning party.",
+    "controls": {
+      "city": "City",
+      "language": "Language"
+    },
+    "stats": {
+      "wards": "wards mapped",
+      "parties": "parties"
+    },
+    "legendTitle": "Legend",
+    "detailsTitle": "Ward Details",
+    "hoverPrompt": "Hover a ward",
+    "detailsPlaceholder": "Click a ward to pin details.",
+    "noResult": "No result",
+    "wardLabel": "Ward",
+    "wardNoLabel": "Ward No",
+    "wardNameLabel": "Ward name",
+    "areaLabel": "Area",
+    "subWardLabel": "Sub-ward",
+    "winnerLabel": "Winner",
+    "partyLabel": "Party",
+    "seatsLabel": "seats",
+    "dataSources": "Data sources: {map} (GeoJSON) and {csv} (ward results).",
+    "mapLoadError": "GeoJSON not loaded.",
+    "csvLoadError": "Failed to load CSV data."
+  },
+  "mr": {
+    "eyebrow": "महानगरपालिका निवडणूक निकाल",
+    "subtitle": "प्रत्येक प्रभाग जिंकणाऱ्या पक्षानुसार रंगवला आहे.",
+    "controls": {
+      "city": "शहर",
+      "language": "भाषा"
+    },
+    "stats": {
+      "wards": "प्रभाग",
+      "parties": "पक्ष"
+    },
+    "legendTitle": "लेजेंड",
+    "detailsTitle": "प्रभाग तपशील",
+    "hoverPrompt": "प्रभागावर माऊस ठेवा",
+    "detailsPlaceholder": "तपशील स्थिर करण्यासाठी प्रभागावर क्लिक करा.",
+    "noResult": "निकाल नाही",
+    "wardLabel": "प्रभाग",
+    "wardNoLabel": "प्रभाग क्रमांक",
+    "wardNameLabel": "प्रभागाचे नाव",
+    "areaLabel": "क्षेत्र",
+    "subWardLabel": "उपप्रभाग",
+    "winnerLabel": "विजयी",
+    "partyLabel": "पक्ष",
+    "seatsLabel": "जागा",
+    "dataSources": "डेटा स्रोत: {map} (GeoJSON) आणि {csv} (प्रभाग निकाल).",
+    "mapLoadError": "GeoJSON लोड झालेले नाही.",
+    "csvLoadError": "CSV डेटा लोड करण्यात अयशस्वी."
+  }
+}

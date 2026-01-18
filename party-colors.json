@@ -1,0 +1,18 @@
+{
+  "fallback": {
+    "key": "No result",
+    "color": "#C7C7C7"
+  },
+  "parties": [
+    { "key": "BJP", "color": "#F28E2B", "aliases": [] },
+    { "key": "ShivSena", "color": "#E15759", "aliases": [] },
+    { "key": "ShivSena-UBT", "color": "#59A14F", "aliases": ["ShivSena(UBT)"] },
+    { "key": "INC", "color": "#4E79A7", "aliases": [] },
+    { "key": "MNS", "color": "#B07D2C", "aliases": [] },
+    { "key": "AIMIM", "color": "#76B7B2", "aliases": ["MIM"] },
+    { "key": "NCP", "color": "#EDC948", "aliases": [] },
+    { "key": "NCP-SP", "color": "#8CD17D", "aliases": [] },
+    { "key": "SP", "color": "#9C755F", "aliases": [] },
+    { "key": "Independent", "color": "#BAB0AC", "aliases": [] }
+  ]
+}

@@ -1,0 +1,228 @@
+Area,Ward No,Sub Ward,Ward Name,Winner,Party
+R–North,1,,Kandarpada - IC Colony,Tejaswi Abhishek Ghosalkar,BJP
+R–North,2,,Gaondevi - Dahisar (East),Jagadeesh Karunakar Ojha,BJP
+R–North,3,,Ketkipada - Shailendra Nagar,Prakash Darekar,BJP
+R–North,4,,Ravalpad,Mangesh Pangare,ShivSena
+R–North,5,,Ashokvan - Chintamani Nagar,Sanjay Ghadi,ShivSena
+R–North,6,,Ambadi - Overi Pada,Diksha Karkar,ShivSena
+R–North,7,,Kandarpada,Ganesh Khankar,BJP
+R–North,8,,Mandapeshwar,Yogita Patil,BJP
+R–Central,9,,MHB Colony,Shivanand Shetty,BJP
+R–Central,10,,Govind Nagar,Jitendra Patel,BJP
+R–Central,11,,Daulat Nagar,Dr. Aditi Khursange,ShivSena
+R–Central,12,,National Park,Sarika Jhore,ShivSena-UBT
+R–Central,13,,Alta Colony - Dattapada,Rani Trivedi,BJP
+R–Central,14,,"Rajendra Nagar, Borivali",Seema Shinde,BJP
+R–Central,15,,Kora Centre,Jignasa Shah,BJP
+R–Central,16,,Vazhira Naka,Shweta Korgaonkar,BJP
+R–Central,17,,Kastur Park,Shilpa Sangore,BJP
+R–Central,18,,"Charkop (S), Kandivali",Sandhya Vipul Doshi,ShivSena
+R–South,19,,Charkop Sector,Dakshata Kavthankar,BJP
+R–South,20,,Sahyadri Nagar,Deepak Tavde,BJP
+R–South,21,,Mahavir Nagar,Leena Deherkar,BJP
+R–South,22,,Sundar Pada,Himanshu Parekh,BJP
+R–South,23,,Parsi Colony,Shivkumar Jha,BJP
+R–South,24,,Defence Colony,Swati Jaiswal,BJP
+R–South,25,,Thakur Village,Nisha Parulekar Bangera,BJP
+R–South,26,,"Gautam Nagar, Damu Nagar",Dharmendra Kale,ShivSena-UBT
+R–South,27,,Narsi Pada,Neelam Gurav,BJP
+R–South,28,,Hanuman Nagar,Ajanta Yadav,INC
+R–South,29,,Ashok Nagar,Sachin Patil,ShivSena-UBT
+R–South,30,,Irani Wadi,Dhaval Vora,BJP
+R–South,31,,Ekta Nagar,Manisha Yadav,BJP
+P–North,32,,Manori Bete,Geeta Bhandari,ShivSena-UBT
+P–North,33,,Azad Nagar,Mohammad Moeen Siddique,INC
+P–North,34,,BMC Colony,Hyder Aslam sheikh,INC
+P–North,35,,Dominic Colony,Yogesh Verma,BJP
+P–North,36,,Pushpa Park,Siddhart Sharma,BJP
+P–North,37,,Kurar Village,Yogita Prashant Kadam,ShivSena-UBT
+P–North,38,,Tanaji Nagar,Surekha Parab,MNS
+P–North,39,,Gokul Nagar,Pushpa Ramesh Kamble,ShivSena-UBT
+P–North,40,,"Mira Nagar, Dindoshi",Suhas wadkar,ShivSena-UBT
+P–North,41,,"Nagri Nivara, Santosh Nagar",Adv. Suhas Wadkar,ShivSena-UBT
+P–North,42,,Pimpri Pada,Dhanshree Bharadkar,ShivSena
+P–North,43,,Kokni Pada,Ajit Raorane,NCP-SP
+P–North,44,,Raheja Township,Sangeeta Sharma,BJP
+P–North,45,,Govind Nagar,Sanjay Kamble,BJP
+P–North,46,,Mamaleddar Wadi,Yogita Koli,BJP
+P–North,47,,Mamaleddar Wadi,Tejinder Singh Tiwana,BJP
+P–North,48,,Malni Depot,Rafiq Eliyas Sheikh,INC
+P–North,49,,Madh Bet,Sangeeta Koli,INC
+P–South,50,,"Bangurnagar, Sundar Nagar",Vikram Rajput,BJP
+P–South,51,,Jayprakash Nagar,Varsha Tembwalker,ShivSena
+P–South,52,,Gokuldam,Priti Satam,BJP
+P–South,53,,Arey Colony,Jeetendra Valvi,ShivSena-UBT
+P–South,54,,Pandurang Wadi,Ankit prabhu,ShivSena-UBT
+P–South,55,,Jawahar Nagar,Shailendra More,ShivSena-UBT
+P–South,56,,Motilal Nagar,Laxmi Bhatia,ShivSena-UBT
+P–South,57,,Lakshmi Nagar,Ankit Prabhu,ShivSena-UBT
+P–South,58,,Oshivara Depot,Sandeep Patel,BJP
+K–West,59,,Versova,Yashodhar Phanse,ShivSena-UBT
+K–West,60,,Lokhandwala,Sayali Kulkarni,BJP
+K–West,61,,Anand Nagar,Divya Singh,INC
+K–West,62,,Behram Baag,Zeeshan Changez Multani,ShivSena-UBT
+K–West,63,,MHADA Colony,Rupesh Savarkar,BJP
+K–West,64,,Shivalik Nagar,Saba Harun Khan,ShivSena-UBT
+K–West,65,,"Rambag, Amboli",Vithhal Bhanderi,BJP
+K–West,66,,Lohana Colony,Haider Moseen,INC
+K–West,67,,Char Bangla,Deepak Kotekar,BJP
+K–West,68,,Saat Bangla,Rohan Rathod,BJP
+K–West,69,,Juhu Tara,Sudha Singh,BJP
+K–West,70,,"Azad Nagar, Mithibai",Anish Makwani,BJP
+K–West,71,,Juhu Koliwada,Sunita Mehta,BJP
+K–East,72,,Natwar Nagar,Yadav Vijayi,BJP
+K–East,73,,Shamnagar,Lona Rawat,ShivSena-UBT
+K–East,74,,Ganesh Nagar,Vidya Arya Kangane,MNS
+K–East,75,,Marol Depot,Promod sawant,ShivSena-UBT
+K–East,76,,Subhash Nagar,Prakash Musale,BJP
+K–East,77,,Meghwadi,Shivani Parab,ShivSena-UBT
+K–East,78,,Shivaji Nagar,Radba Sheikh,ShivSena-UBT
+K–East,79,,Shankar Wadi,Mansi Madhukar,ShivSena-UBT
+K–East,80,,Parsi Colony,Disha Yadav,BJP
+K–East,81,,Sher-E-PunjSherh,Kesharben Patel,BJP
+K–East,82,,Ashoker Nagar,Jagadeshwari Amin,BJP
+K–East,83,,Brahmin Pada,Sonali Save,ShivSena-UBT
+K–East,84,,Koldongri,Anjli Samant,BJP
+K–East,85,,Dahankar College,Milind Shinde,BJP
+K–East,86,,Sahara Village,Ritesh Rai,ShivSena
+H–East,87,,Hanuman Tekdi,Puja Mahadeshwar,ShivSena-UBT
+H–East,88,,Wakola,Sharwari Parab,ShivSena-UBT
+H–East,89,,Dhobi Ghat,Gitesh Raut,ShivSena-UBT
+H–East,90,,Kalina,Tulip Miranda,INC
+H–East,91,,Vidya Nagar,Sagun Naik,ShivSena
+H–East,92,,Bharat Nagar,Ibrahim Iqbal Qureshi,INC
+H–East,93,,MIG Colony,Rohini Kamble,ShivSena-UBT
+H–East,94,,Golibar,Pragya Bhutkar,ShivSena-UBT
+H–East,95,,Kherwadi,Hari Shastri,ShivSena-UBT
+H–East,96,,Vendre Terminus,Khan Ayesha Shams,NCP
+H–West,97,,Santacruz Bus Depot,Hemlata Gala,BJP
+H–West,98,,Dr. Ambedkar Nagar,Alka Kerkar,BJP
+H–West,99,,Khardanda,Chintamani Nivate,ShivSena-UBT
+H–West,100,,Pali Village,Swapna Mhatre,BJP
+H–West,101,,Vendra Lake,Karen Demello,INC
+H–West,102,,Vendre Reclamation,Raja Siraj Khan,INC
+T,103,,Tulsi Lake,Hetal Morvekar,BJP
+T,104,,Siddarth Nagar,Prakash Gangadhare,BJP
+T,105,,Gavhanpada,Anita Vaiti,BJP
+T,106,,Hariom Nagar,Prabhakar Shinde,BJP
+T,107,,Mulund,Neil Somaiya,BJP
+T,108,,Hanumanpada,Deepika Ghag,BJP
+S,109,,Tanaji Wadi,Suresh Shinde,ShivSena-UBT
+S,110,,Bhandup Sonapur,Asha Suresh Koparkar,INC
+S,111,,Datar Colony,Deepak Sawant,ShivSena-UBT
+S,112,,Punjabi Colony,Shakshi Dalvi,BJP
+S,113,,Milind Nagar,Rupesh Patil,ShivSena
+S,114,,Kranti Nagar,Supriya Dhurat,ShivSena
+S,115,,Kokannagar,Rajbhoj Jyoti Anil,MNS
+S,116,,New Colony,Jagruti Patil,BJP
+S,117,,Kanjur Village,Shweta Pawaskar,ShivSena-UBT
+S,118,,Kannamwar Nagar,Sunita Jadhav,ShivSena-UBT
+S,119,,Tagore Nagar,Rajesh Sonawane,ShivSena
+S,120,,Godrej Colony,Vishwash Shinde,ShivSena-UBT
+S,121,,IIT Powai,Priyadarshini Thackeray,ShivSena-UBT
+S,122,,Hiranandani Garden,Chandan Sharma,BJP
+N,123,,Vikroli Park Site,Sunil More,ShivSena-UBT
+N,124,,Varsha Nagar,Sakina Shaikh,ShivSena-UBT
+N,125,,Ramabai Colony,Satish Pawar,ShivSena-UBT
+N,126,,Jagdusha Nagar,Archana Bhalerao,BJP
+N,127,,Ramnagar,Swaroopa Patil,ShivSena-UBT
+N,128,,Burvenagar,Sai Shirke,MNS
+N,129,,Chiraagnagar,Ashwini Mate,BJP
+N,130,,Kirol Village,Dharmesh Giri,BJP
+N,131,,Naidu Colony,Rakhi Jadhav,BJP
+N,132,,Somyya College,Ritu Tawade,BJP
+N,133,,Kamraj Nagar,Shrutika Kande,ShivSena
+M–East,134,,Kamala Nagar,Mehzabin Khan,AIMIM
+M–East,135,,Ramabainagar,Navnath Ban,BJP
+M–East,136,,Shivajinagar Terminus,Jameer Qureshi,AIMIM
+M–East,137,,Shivajinagar,Sameer Patel,AIMIM
+M–East,138,,Metro Hospital,Roshan Irfan Shaikh,AIMIM
+M–East,139,,Lotus Colony,Shabana Shaikh,AIMIM
+M–East,140,,Tata Nagar,Vijay Tatoba Ubade,AIMIM
+M–East,141,,Municipal Colony,Sidhharth Ustre,ShivSena-UBT
+M–East,142,,Lalubhai Compound,Apeksha KHandekar,ShivSena
+M–East,143,,Maharashtra Nagar,Shabana Mohammad Faruk Qazi,AIMIM
+M–East,144,,Devnar Village,Dinesh Bablu Panchal,BJP
+M–East,145,,Chitta Camp,Khairunnisa Hussein,AIMIM
+M–East,146,,Anushakti Colony,Samruddhi Kate,ShivSena
+M–East,147,,RCF Colony,Pragya Sadafule,ShivSena
+M–East,148,,HP Nagar,Anjali Naik,ShivSena-UBT
+M–West,149,,Chedanagar,Shusam Sawant,BJP
+M–West,150,,BMC Colony,Vaishali Ajit Shendekar,INC
+M–West,151,,Thakkarappa Colony,Kashish Raja Fulwariya,BJP
+M–West,152,,Postal Colony,Asha Marathe,BJP
+M–West,153,,Chh. Sambhajinagar,Meenakshi Patankar,ShivSena-UBT
+M–West,154,,Chembur Colony,Mahadev Shigwan,BJP
+M–West,155,,Mahul Village,Snehal Shivkar,ShivSena-UBT
+L,156,,Tunga Village,Ashwini Matekar,ShivSena-UBT
+L,157,,Raheja Vihar,Asha Tawade,INC
+L,158,,Yadav Nagar,Chitra Sangle,ShivSena-UBT
+L,159,,"Asalfa, Mohili",Prakash More,BJP
+L,160,,Narayan Nagar,Kiran Langde,ShivSena
+L,161,,Netaji Nagar,Vijayendra Shinde,ShivSena
+L,162,,Disoja Nagar,Amir Naseem Khan,INC
+L,163,,Sakinaka,Shaila Lande,ShivSena
+L,164,,"Kamani, Navpada",Harish Bhangirde,BJP
+L,165,,Christian Village,Ashraf Azmi,INC
+L,166,,Kismat Nagar,Meenal Sanjay Turde,ShivSena
+L,167,,Buddha Colony,Saman Arshad Azmi,INC
+L,168,,Kalpana Nagar,Dr.Saeeda Khan,NCP
+L,169,,Nehru Nagar,Pravina morajkar,ShivSena-UBT
+L,170,,Avhrad Nagar,Bushra Nadem Malik,NCP
+L,171,,Samarth Nagar,Rani Yerunkar,ShivSena-UBT
+F–North,172,,Sion Fort,Rajashree Shirwadkar,BJP
+F–North,173,,Somyya Hospital,Shilpa Keluskar,BJP
+F–North,174,,"Wadal, RTO",Sakshi Kanojia,BJP
+F–North,175,,Kokri Agar,Mansi Satamkar,ShivSena
+F–North,176,,GTB Nagar,Rekha Yadav,BJP
+F–North,177,,Punjabi Camp,Kalpesha Jaisal Kothari,BJP
+F–North,178,,Parsi Colony,Amey Ghole,ShivSena
+F–North,179,,Nadkarni Park,Ayesha Bano,INC
+F–North,180,,Dosti Arcade,Trushna Vishwasaro,ShivSena
+F–North,181,,Korba Mithagar,Anil Kadam,ShivSena-UBT
+G–North,182,,Mahim Koliwada,Milind Vaidya,ShivSena-UBT
+G–North,183,,Dharavi Agar,Asha Kale,INC
+G–North,184,,Lakshmi Baag,Varsha Nakashe,ShivSena-UBT
+G–North,185,,Rajiv Gandhi Nagar,T. M. Jagadish,ShivSena-UBT
+G–North,186,,Dharavi Village,Archana Shinde,ShivSena-UBT
+G–North,187,,Navrang Compound,Joseph Koli,ShivSena-UBT
+G–North,188,,RP Nagar,Bhaskar R. Shetty,ShivSena
+G–North,189,,Labour Camp,Harshala More,ShivSena-UBT
+G–North,190,,Navjivan Colony,Sheetal Gambhir Desai,BJP
+G–North,191,,Shivaji Park,Vishakha Raut,ShivSena-UBT
+G–North,192,,Dadar (West),Yashwant Killedar,MNS
+G–South,193,,Worli Village,Hemangi Worlikar,ShivSena-UBT
+G–South,194,,Prabhadevi,Nishikant Shinde,ShivSena-UBT
+G–South,195,,Lower Parel (West),Vijay Bhange,ShivSena-UBT
+G–South,196,,Worli Dairy,Padmaja Ashish Chemburkar,ShivSena-UBT
+G–South,197,,Mahalakshmi Racecourse,Vanita Narvankar,ShivSena-UBT
+G–South,198,,Mafatlal Mill,Aboli Gopal Khadye,ShivSena-UBT
+G–South,199,,Arthur Road Jail,Kishori Pednekar,ShivSena-UBT
+F–South,200,,Nayigav,Urmila Panchal,ShivSena-UBT
+F–South,201,,Spring Mill Compound,Khairunnisa Hussein,SP
+F–South,202,,Sewri (West),Shraddha Jadhav,ShivSena-UBT
+F–South,203,,Railway Chawl,Shradha (bharti) pednekar,ShivSena-UBT
+F–South,204,,KEM Hospital,Kiran Prabhakar Tawde,ShivSena-UBT
+F–South,205,,Kala Chowki,Supriya Dilip Dalvi,MNS
+F–South,206,,Sewri,Sachin padwal,ShivSena-UBT
+E,207,,Byculla,Rohidas Lokhande,BJP
+E,208,,Jijamatai Garden,Ramakant Rahate,ShivSena-UBT
+E,209,,Darukhana,Yamini Jadhav,ShivSena
+E,210,,Tadwadi,sonam jamsutkar,ShivSena-UBT
+E,211,,New Nagpada,Waqar Nisar Ahmed,INC
+E,212,,Agripada,Amrin Shezad Abrahani,SP
+E,213,,Kamatipura,Nasima Zayed,INC
+D,214,,Mahalakshmi Temple,Ajit Patil,BJP
+D,215,,Chikhal Wadi,Santosh Dhole,BJP
+D,216,,Dalal Estate,Rajashree Bhatankar,INC
+D,217,,Girgaum Chowpatty,Guaurang Jhaveri,BJP
+D,218,,Opera House,Snehal Gaurav Tendulkar,BJP
+D,219,,Malabar Hill,Sunny Ravindra Sanap,BJP
+C,220,,Nal Bazar,Sampada Mayekar,ShivSena-UBT
+C,221,,Fanaswadi,Akash Purohit,BJP
+C,222,,Dhobi Talao,Rita Makawana,BJP
+B,223,,Princess Dock,Dyanraj Nikam,INC
+B,224,,Pydhonie,Rukhasana Noorul Amin,INC
+A,225,,Colaba,Harshita Narwekar,BJP
+A,226,,Nariman Point,Makarand Narwekar,BJP
+A,227,,Navy Nagar,Dr. Gauravi Narwekar,BJP
