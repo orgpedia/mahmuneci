@@ -81,7 +81,6 @@ const elements = {
   legendTitle: document.getElementById("legend-title"),
   detailsTitle: document.getElementById("details-title"),
   wardDetails: document.getElementById("ward-details"),
-  hoverLabel: document.getElementById("hover-label"),
   dataSources: document.getElementById("data-sources"),
   pieToggle: document.getElementById("pie-toggle"),
   pieToggleLabel: document.getElementById("pie-toggle-label"),
@@ -414,7 +413,6 @@ function updateUiStrings() {
   elements.partiesLabel.textContent = t("stats.parties");
   elements.legendTitle.textContent = t("legendTitle");
   elements.detailsTitle.textContent = t("detailsTitle");
-  elements.hoverLabel.textContent = t("hoverPrompt");
   document.documentElement.lang = currentLang;
 
   const config = CITY_CONFIG[currentCity];
@@ -431,6 +429,13 @@ function updateUiStrings() {
 
 function renderPlaceholder() {
   elements.wardDetails.innerHTML = `<p class=\"muted\">${t("detailsPlaceholder")}</p>`;
+}
+
+function showStatusMessage(message) {
+  if (!elements.wardDetails) {
+    return;
+  }
+  elements.wardDetails.innerHTML = `<p class=\"muted\">${message}</p>`;
 }
 
 function populateControls() {
@@ -477,12 +482,7 @@ function renderLegend() {
 }
 
 function updateHover(entry, wardNo) {
-  if (!wardNo) {
-    elements.hoverLabel.textContent = t("hoverPrompt");
-    return;
-  }
-
-  elements.hoverLabel.textContent = getHoverText(entry, wardNo) || t("hoverPrompt");
+  return;
 }
 
 function updateDetails(wardNo) {
@@ -663,7 +663,7 @@ function styleFeature(feature) {
 
 function buildMap(geojson, config) {
   if (!geojson) {
-    elements.hoverLabel.textContent = t("mapLoadError");
+    showStatusMessage(t("mapLoadError"));
     return;
   }
 
@@ -701,7 +701,6 @@ function buildMap(geojson, config) {
         },
         mouseout: (event) => {
           wardLayer.resetStyle(event.target);
-          elements.hoverLabel.textContent = t("hoverPrompt");
           if (layer.getTooltip()) {
             layer.closeTooltip();
           }
@@ -748,7 +747,7 @@ async function loadCityData(cityKey) {
     updateUiStrings();
     buildMap(geojson, config);
   } catch (error) {
-    elements.hoverLabel.textContent = t("csvLoadError");
+    showStatusMessage(t("csvLoadError"));
   }
 }
 
