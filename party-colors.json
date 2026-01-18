@@ -10,7 +10,9 @@
     { "key": "INC", "color": "#4E79A7", "aliases": [] },
     { "key": "MNS", "color": "#B07D2C", "aliases": [] },
     { "key": "AIMIM", "color": "#2CA02C", "aliases": ["MIM"] },
+    { "key": "BSP", "color": "#9C755F", "aliases": [] },
     { "key": "NCP", "color": "#EDC948", "aliases": [] },
+    { "key": "IUML", "color": "#76B7B2", "aliases": [] },
     { "key": "NCP-SP", "color": "#8CD17D", "aliases": [] },
     { "key": "SP", "color": "#7A1E3A", "aliases": [] },
     { "key": "Independent", "color": "#BAB0AC", "aliases": [] }

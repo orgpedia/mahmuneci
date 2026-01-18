@@ -36,6 +36,28 @@ const CITY_CONFIG = {
     csvFile: "pcmc.csv",
     hasSubWards: true,
   },
+  thane: {
+    key: "thane",
+    label: { en: "Thane", mr: "ठाणे" },
+    title: {
+      en: "Thane Municipal Corporation Election Results",
+      mr: "ठाणे महानगरपालिका निवडणूक निकाल",
+    },
+    mapFile: "thane.js.txt",
+    csvFile: "thane.csv",
+    hasSubWards: true,
+  },
+  nagpur: {
+    key: "nagpur",
+    label: { en: "Nagpur", mr: "नागपूर" },
+    title: {
+      en: "Nagpur Municipal Corporation Election Results",
+      mr: "नागपूर महानगरपालिका निवडणूक निकाल",
+    },
+    mapFile: "nagpur.js.txt",
+    csvFile: "nagpur.csv",
+    hasSubWards: true,
+  },
 };
 
 const LANGUAGE_LABELS = {
