@@ -1,6 +1,6 @@
 Area,Ward No,Sub Ward,Ward Name,Winner,Party
-R–North,1,,Kandarpada - IC Colony,Tejaswi Abhishek Ghosalkar,BJP
-R–North,2,,Gaondevi - Dahisar (East),Jagadeesh Karunakar Ojha,BJP
+R–North,1,,Kandarpada - IC Colony,Rekha Yadav,ShivSena
+R–North,2,,Gaondevi - Dahisar (East),Tejaswi Abhishek Ghosalkar,BJP
 R–North,3,,Ketkipada - Shailendra Nagar,Prakash Darekar,BJP
 R–North,4,,Ravalpad,Mangesh Pangare,ShivSena
 R–North,5,,Ashokvan - Chintamani Nagar,Sanjay Ghadi,ShivSena
@@ -53,9 +53,9 @@ P–South,51,,Jayprakash Nagar,Varsha Tembwalker,ShivSena
 P–South,52,,Gokuldam,Priti Satam,BJP
 P–South,53,,Arey Colony,Jeetendra Valvi,ShivSena-UBT
 P–South,54,,Pandurang Wadi,Ankit prabhu,ShivSena-UBT
-P–South,55,,Jawahar Nagar,Shailendra More,ShivSena-UBT
+P–South,55,,Jawahar Nagar,Harsh Patel,BJP
 P–South,56,,Motilal Nagar,Laxmi Bhatia,ShivSena-UBT
-P–South,57,,Lakshmi Nagar,Ankit Prabhu,ShivSena-UBT
+P–South,57,,Lakshmi Nagar,Shrikala Pillay,BJP
 P–South,58,,Oshivara Depot,Sandeep Patel,BJP
 K–West,59,,Versova,Yashodhar Phanse,ShivSena-UBT
 K–West,60,,Lokhandwala,Sayali Kulkarni,BJP
@@ -76,7 +76,7 @@ K–East,74,,Ganesh Nagar,Vidya Arya Kangane,MNS
 K–East,75,,Marol Depot,Promod sawant,ShivSena-UBT
 K–East,76,,Subhash Nagar,Prakash Musale,BJP
 K–East,77,,Meghwadi,Shivani Parab,ShivSena-UBT
-K–East,78,,Shivaji Nagar,Radba Sheikh,ShivSena-UBT
+K–East,78,,Shivaji Nagar,Nazifa Safi,ShivSena
 K–East,79,,Shankar Wadi,Mansi Madhukar,ShivSena-UBT
 K–East,80,,Parsi Colony,Disha Yadav,BJP
 K–East,81,,Sher-E-PunjSherh,Kesharben Patel,BJP
@@ -111,8 +111,8 @@ S,109,,Tanaji Wadi,Suresh Shinde,ShivSena-UBT
 S,110,,Bhandup Sonapur,Asha Suresh Koparkar,INC
 S,111,,Datar Colony,Deepak Sawant,ShivSena-UBT
 S,112,,Punjabi Colony,Shakshi Dalvi,BJP
-S,113,,Milind Nagar,Rupesh Patil,ShivSena
-S,114,,Kranti Nagar,Supriya Dhurat,ShivSena
+S,113,,Milind Nagar,Deepmala Baban Bade,ShivSena-UBT
+S,114,,Kranti Nagar,Rajool Sanjay Patil,ShivSena-UBT
 S,115,,Kokannagar,Rajbhoj Jyoti Anil,MNS
 S,116,,New Colony,Jagruti Patil,BJP
 S,117,,Kanjur Village,Shweta Pawaskar,ShivSena-UBT
@@ -123,7 +123,7 @@ S,121,,IIT Powai,Priyadarshini Thackeray,ShivSena-UBT
 S,122,,Hiranandani Garden,Chandan Sharma,BJP
 N,123,,Vikroli Park Site,Sunil More,ShivSena-UBT
 N,124,,Varsha Nagar,Sakina Shaikh,ShivSena-UBT
-N,125,,Ramabai Colony,Satish Pawar,ShivSena-UBT
+N,125,,Ramabai Colony,Suresh Awale,ShivSena
 N,126,,Jagdusha Nagar,Archana Bhalerao,BJP
 N,127,,Ramnagar,Swaroopa Patil,ShivSena-UBT
 N,128,,Burvenagar,Sai Shirke,MNS
@@ -146,7 +146,7 @@ M–East,144,,Devnar Village,Dinesh Bablu Panchal,BJP
 M–East,145,,Chitta Camp,Khairunnisa Hussein,AIMIM
 M–East,146,,Anushakti Colony,Samruddhi Kate,ShivSena
 M–East,147,,RCF Colony,Pragya Sadafule,ShivSena
-M–East,148,,HP Nagar,Anjali Naik,ShivSena-UBT
+M–East,148,,HP Nagar,Anjali Naik,ShivSena
 M–West,149,,Chedanagar,Shusam Sawant,BJP
 M–West,150,,BMC Colony,Vaishali Ajit Shendekar,INC
 M–West,151,,Thakkarappa Colony,Kashish Raja Fulwariya,BJP

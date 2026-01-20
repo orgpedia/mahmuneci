@@ -106,6 +106,7 @@ let selectedWardNo = null;
 let showPieCharts = true;
 let showMapLabels = false;
 let currentGeoJson = null;
+let pieToggleLastChecked = true;
 
 function normalize(value) {
   if (value === null || value === undefined) {
@@ -425,6 +426,29 @@ function updateUiStrings() {
     map: config.mapFile,
     csv: config.csvFile,
   });
+}
+
+function updatePieToggleVisibility() {
+  const config = CITY_CONFIG[currentCity];
+  const toggleWrapper = elements.pieToggle?.closest(".toggle");
+  if (!toggleWrapper || !elements.pieToggle) {
+    return;
+  }
+
+  if (config?.hasSubWards) {
+    toggleWrapper.style.display = "";
+    elements.pieToggle.checked = pieToggleLastChecked;
+    showPieCharts = elements.pieToggle.checked;
+    return;
+  }
+
+  pieToggleLastChecked = elements.pieToggle.checked;
+  elements.pieToggle.checked = false;
+  showPieCharts = false;
+  toggleWrapper.style.display = "none";
+  if (pieLayer) {
+    pieLayer.remove();
+  }
 }
 
 function renderPlaceholder() {
@@ -783,8 +807,9 @@ async function init() {
   updateUiStrings();
   showMapLabels = elements.mapLabelsToggle?.checked ?? false;
   document.body.classList.toggle("labels-on-map", showMapLabels);
+  pieToggleLastChecked = elements.pieToggle?.checked ?? true;
+  updatePieToggleVisibility();
   initMap();
-  showPieCharts = elements.pieToggle?.checked ?? true;
   await loadCityData(currentCity);
   renderPlaceholder();
 
@@ -812,6 +837,7 @@ async function init() {
     selectedWardNo = null;
     updateUiStrings();
     populateControls();
+    updatePieToggleVisibility();
     await loadCityData(currentCity);
     renderPlaceholder();
   });
