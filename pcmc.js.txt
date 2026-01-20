@@ -4898,7 +4898,7 @@ var statesData = {
     {
       "type": "Feature",
       "properties": {
-        "ward_no": 16,
+        "ward_no": 19,
         "city": "pimpri"
       },
       "geometry": {
